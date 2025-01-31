@@ -1,0 +1,247 @@
+/* Start Hero */
+.hero .heading {
+  max-width: 50%;
+  margin-right: auto;
+  text-align: right;
+  margin-bottom: 50px;
+}
+.hero .heading::before {
+  right: -58px;
+  border-color: transparent transparent #a9c4d9 #a9c4d9;
+}
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero .container .left-side,
+.hero .container .right-side {
+  width: 49%;
+}
+.hero .left-side .content {
+  margin-bottom: 35px;
+}
+.hero .left-side h5 {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.hero .left-side h5::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 0;
+  width: 10px; height: 10px;
+  background-color: var(--main);
+  transform: translateY(-50%) rotate(45deg);
+}
+.hero .left-side .txt {
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+.hero .right-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: -35px;
+  margin-left: -25px;
+}
+@media screen and (max-width: 991px) {
+  .hero .container {
+    flex-direction: column-reverse;
+  }
+  .hero .container .left-side {
+    width: 100%;
+  }
+  .hero .container .right-side {
+    width: 70%;
+    margin: 0 auto 25px;
+  }
+  .hero .right-side img {
+    margin: 0;
+  }
+}
+/* End Hero */
+
+/* Start Product Managements */
+.product-management {
+  background-image: linear-gradient(to top, #dbefff, #ebf7ff);
+  overflow-x: hidden;
+}
+.product-management .product .container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product-management .product {
+  margin-bottom: 75px;
+}
+.product .container .left-side {
+  position: relative;
+  width: 25%;
+}
+.product .container .right-side {
+  width: 70%;
+  align-self: flex-end;
+  margin-left: 30px;
+}
+.product .right-side h3 {
+  position: relative;
+  padding: 5px 25px;
+  margin-bottom: 35px;
+  z-index: 1;
+}
+.product .right-side h3::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: calc(100% + 300px);
+  height: 100%;
+  z-index: -1;
+}
+.product:nth-child(1) .right-side h3 {
+  background-image: linear-gradient(to right, #8d8f97 10%, transparent);
+}
+.product:nth-child(2) .right-side h3 {
+  background-image: linear-gradient(to right, #d3bdad 10%, transparent);
+}
+.product:nth-child(3) .right-side h3 {
+  background-image: linear-gradient(to right, #e89c7f 10%, transparent);
+}
+.product:nth-child(4) .right-side h3 {
+  background-image: linear-gradient(to right, #7da2c0 10%, transparent);
+}
+.product:nth-child(5) .right-side h3 {
+  background-image: linear-gradient(to right, #80c4cc 10%, transparent);
+}
+.product .right-side ul > li {
+  position: relative;
+  list-style: none;
+  line-height: 25px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+.product .right-side ul > li::before {
+  content: '';
+  position: absolute;
+  top: 8px; left: 0;
+  width: 10px; height: 10px;
+  background-color: #4d9cac;
+  transform: rotate(45deg);
+}
+.product .container .img-box {
+  border-radius: 15px;
+}
+.product .container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.project .container .img-box {
+  position: absolute;
+  max-width: 350px;
+  margin-top: 45px;
+}
+.project .right-side ol li {
+  list-style: none;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+.project .container {
+  flex-direction: row !important;
+}
+.logistics .bottom-side:last-child {
+  align-self: flex-end;
+}
+.product .bottom-side {
+  width: 60%;
+  margin-top: 25px;
+}
+.logistics .bottom-side:last-child {
+  margin-right: 100px;
+}
+@media screen and (max-width: 991px) {
+  .project .container {
+    flex-direction: column !important;
+  }
+  .product .container .left-side {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .project .container .img-box {
+    position: relative;
+  }
+  .project .container img {
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  .product .container .right-side {
+    width: 100%;
+  }
+  .product .bottom-side {
+    width: 75%;
+  }
+  .logistics .bottom-side:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .project .container .img-box {
+    max-width: 300px;
+  }
+}
+/* End Product Managements */
+
+/* Start Image Preview */
+/* .preview-container {
+  position: fixed;
+  top: 0; left: 15px;
+  width: calc(100% - 30px);
+  height: 100%;
+  transform: scale(0);
+  overflow-y: scroll;
+  transition: 0.25s;
+  z-index: 9999999;
+}
+.preview-container.show {
+  transform: scale(1);
+}
+.preview {
+  position: absolute;
+  top: 25px; left: 50%;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0px #0000002b;
+  transform: translateX(-50%);
+}
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary);
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+}
+.preview-header .close-preview {
+  font-size: 22px;
+  color: var(--main);
+  cursor: pointer;
+}
+.img-preview {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.img-preview .previewImg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  z-index: 9;
+} */
+/* Start Image Preview */

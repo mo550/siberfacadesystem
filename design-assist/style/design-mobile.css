@@ -1,0 +1,92 @@
+/* Start Hero */
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #ddf0ff, #fff);
+}
+.hero .heading h3 {
+  position: relative;
+  max-width: calc(100% - 25px);
+  background-color: #a9c4d9;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.hero .txt {
+  margin-bottom: 35px;
+}
+.hero .image-box {
+  margin-bottom: 25px;
+}
+.hero .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* End Hero */
+
+/* Start Design */
+.designs {
+  background-image: linear-gradient(to top, #daefff, #ddf0ff);
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+.design-box {
+  margin-bottom: 75px;
+}
+.design-box .heading {
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.design-box .txt {
+  text-indent: 0;
+  margin-bottom: 35px;
+}
+.design-box .image-box {
+  position: relative;
+  width: 280px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  margin: 11px auto 0;
+  z-index: 22;
+}
+.design-box .image-box .styling-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.design-box .image-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.design-box .image-box::before,
+.design-box .image-box::after,
+.design-box .image-box .styling-box::before,
+.design-box .image-box .styling-box::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #587f9e;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  z-index: -1;
+}
+.design-box .image-box::before {
+  right: -5px;
+  top: -5px;
+}
+.design-box .image-box::after {
+  right: -5px;
+  bottom: -5px;
+}
+.design-box .image-box .styling-box::before {
+  top: -5px;
+  left: -5px;
+}
+.design-box .image-box .styling-box::after {
+  bottom: -5px;
+  left: -5px;
+}
+/* End Design */

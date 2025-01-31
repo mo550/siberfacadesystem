@@ -1,0 +1,271 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Font Awesome */
+@import url("https://use.fontawesome.com/releases/v6.0.0/css/all.css");
+
+/* Start Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  outline: none;
+}
+*::selection {
+  color: #fff;
+  background: var(--main);
+}
+:root {
+  --main: #f15a1a;
+  --secondary: #393b41;
+  --light-blue: #e0f2ff;
+  --img-border: 1px solid rgba(0, 0, 0, 0.25);
+  --blue-grediant: linear-gradient(to bottom, #fbfdff, #f1f9ff, #ebf7ff);
+  --transition: 0.25s ease-in-out;
+}
+a {
+  color: var(--secondary);
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  user-select: none;
+  pointer-events: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+body {
+  color: var(--secondary);
+  background-color: #FFF;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.container {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+  }
+}
+.txt {
+  text-indent: 20px;
+  line-height: 30px;
+}
+.logo-img img {
+  max-width: 200px;
+}
+.main-btn {
+  font-size: 14px;
+  color: #FFF;
+  background-color: #393B41;
+  border-radius: 4px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+  transition: var(--transition);
+}
+.main-btn:hover {
+  background-color: var(--main);
+}
+.img-box {
+  border: var(--img-border);
+  overflow: hidden;
+}
+.img-box img {
+  display: block;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.img-box:hover img {
+  transform: scale(1.05);
+}
+/* End Global Rules */
+
+/* Start Header */
+.header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  transition: background 0.25s;
+  z-index: 10000;
+}
+.header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: inherit;
+}
+.header.active {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px 0 #00000030;
+}
+.header .navLinks {
+  position: fixed;
+  top: 50px;
+  left: 100%;
+  width: 100%;
+  min-height: 350px;
+  background: #c8d5df;
+  padding: 30px;
+  transition: left var(--transition);
+  z-index: 10000;
+}
+.navLinks.show {
+  left: 0;
+}
+.header .navLinks > li {
+  position: relative;
+  font-size: 15px;
+  color: var(--secondary);
+  font-weight: 500;
+  list-style: none;
+  cursor: pointer;
+}
+.header .navLinks > li span {
+  font-size: 15px;
+  height: 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+.header .navLinks > li span i {
+  color: var(--secondary);
+  font-size: 14px;
+  margin-left: 8px;
+  transition: var(--transition);
+}
+.header .navLinks > li.active span i {
+  color: #175f98;
+  transform: rotate(180deg);
+}
+.navLinks li .sub-menu {
+  display: none;
+}
+.navLinks .sub-menu li {
+  position: relative;
+  text-align: right;
+  list-style: none;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+.navLinks .sub-menu li a {
+  display: block;
+  color: #175f98;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.navLinks li.active .sub-menu {
+  position: relative;
+  display: block;
+}
+#toggleBar {
+  position: relative;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+}
+#toggleBar span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary);
+  transition: var(--transition);
+}
+#toggleBar span:nth-child(1) {
+  top: 0;
+}
+#toggleBar span:nth-child(2) {
+  top: 6px;
+}
+#toggleBar span:nth-child(3) {
+  top: 12px;
+}
+#toggleBar.active span:nth-child(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+#toggleBar.active span:nth-child(2) {
+  opacity: 0;
+}
+#toggleBar.active span:nth-child(3) {
+  top: 6px;
+  transform: rotate(-45deg);
+}
+/* End Header */
+
+/* Start Footer */
+.footer {
+  position: relative;
+  font-size: 14px;
+  color: #FFF;
+  background-color: #33424a;
+  padding: 45px 25px 25px;
+}
+.footer .container > div {
+  margin-bottom: 45px;
+}
+.footer .page-links a {
+  color: #FFF;
+  display: block;
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+.footer .location h4,
+.footer .contact h4 {
+  margin-bottom: 25px;
+}
+.footer .contact a {
+  color: #fff;
+}
+.footer .location p,
+.footer .contact p {
+  color: #fff !important;
+  margin-bottom: 5px;
+}
+.footer-logo img {
+  width: 150px;
+}
+.footer .copyright {
+  margin-top: 15px;
+}
+#scrollToTop {
+  position: absolute;
+  top: 10px; right: 10px;
+  width: 40px; height: 40px;
+  border: 2px solid #61656c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#scrollToTop i {
+  color: #FFF;
+  font-size: 20px;
+}
+/* End Footer */

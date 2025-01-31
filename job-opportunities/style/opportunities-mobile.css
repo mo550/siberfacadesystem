@@ -1,0 +1,15 @@
+/* Start Hero */
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #ddf0ff, #fff);
+}
+.hero .logo-img {
+  margin-bottom: 100px;
+}
+.hero .txt {
+  font-size: 20px;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* End Hero */

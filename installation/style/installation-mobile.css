@@ -1,0 +1,29 @@
+/* Start Hero */
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #ddf0ff, #fff);
+  padding-bottom: 125px;
+}
+.hero .heading h3 {
+  position: relative;
+  max-width: calc(100% - 25px);
+  background-color: #a9c4d9;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.hero .txt:first-child {
+  font-size: 20px;
+  text-indent: 0;
+}
+.hero .img-box {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.hero .img-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+/* End Hero */

@@ -1,0 +1,15 @@
+/* Start Hero */
+.hero {
+  min-height: 100vh;
+  text-align: center;
+}
+.hero .heading {
+  width: 55%;
+  text-align: right;
+  margin-bottom: 35px;
+}
+.hero .heading::before {
+  right: -58px;
+  border-color: transparent  transparent #a9c4d9 #a9c4d9;
+}
+/* End Hero */

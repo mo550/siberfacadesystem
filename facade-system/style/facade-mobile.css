@@ -1,0 +1,84 @@
+/* Start Facade System */
+.facade-system {
+  background-image: linear-gradient(to top, #b5d3eb, #f8fafc);
+}
+.facade-system .intro-txt {
+  background-color: #dfeaf1;
+  text-align: right;
+  padding: 15px 25px;
+  margin: 35px 0 25px;
+}
+.facade-system .intro-txt .txt {
+  font-size: 21px;
+  max-width: 75%;
+  margin-left: auto;
+}
+.facade .image-side h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.facade .image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.facade .image-side .img-box {
+  width: 280px;
+  background-color: #fff;
+  border: 0;
+  margin: 0 auto;
+}
+.facade1 .img-box,
+.facade2-3 .container:nth-child(1) .img-box {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.main-cont .description .txt {
+  margin-bottom: 40px;
+}
+.main-cont .features {
+  margin-left: 15px;
+}
+.main-cont .features li {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/* Tabs Switch Function & Style */
+.wrapper .tabs {
+  width: 208px;
+  height: 50px;
+  display: flex;
+  border-bottom: 2px solid #bac1c3;
+  margin: 10px 0 20px;
+}
+.wrapper .tabs label {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 50px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.wrapper .description:checked ~ .tabs .description::before,
+.wrapper .features:checked ~ .tabs .features::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #175f98;
+}
+input[type="radio"] {
+  display: none;
+}
+.main-cont .content {
+  display: none;
+}
+.wrapper .description:checked ~ .main-cont .description,
+.wrapper .features:checked ~ .main-cont .features {
+  display: block;
+}
+/* End Facade System */

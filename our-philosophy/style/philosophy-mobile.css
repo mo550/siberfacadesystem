@@ -1,0 +1,106 @@
+/* Start Hero */
+.hero {
+  background-color: #f8fafc;
+}
+.hero .logo-img {
+  margin-bottom: 50px;
+}
+.hero .txt {
+  margin-bottom: 25px;
+}
+.hero .btn-box {
+  text-align: center;
+}
+.hero-txt {
+  background-color: #dde8f0;
+  padding: 10px;
+  margin: 50px 0 0;
+}
+.hero-txt .txt {
+  font-size: 20px;
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* End Hero */
+
+/* Start Innovation & Strategies */
+.innovation {
+  background-image: linear-gradient(to top, #dcf0ff, #e3f3ff, #f8fafc);
+}
+.strategies {
+  background-image: linear-gradient(to top, #c6daec, #dcf0ff);
+  padding-top: 0;
+}
+.innovation h2,
+.strategies h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.innovation .hint,
+.strategies .hint {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.innovation .img-box img,
+.strategies .img-box img {
+  width: 100%;
+}
+.innovation .txt,
+.strategies .txt,
+.innovation .services {
+  margin-top: 35px;
+}
+.innovation .services h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.innovation .services img {
+  margin-right: 20px;
+}
+/* End Innovation & Strategies */
+
+/* Start Values */
+.values {
+  background-image: linear-gradient(to top, #b2d1eb, #c6daec);
+}
+.values h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.values .value-txt {
+  background-color: #dde8f0;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.values .value-txt .txt {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.values .value-box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.value-box h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.value-box p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.value-box:nth-child(odd) .image-box {
+  max-width: 80px;
+  margin-right: 15px;
+}
+.value-box:nth-child(even) .image-box {
+  max-width: 50px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.value-box img {
+  width: 100%;
+}
+/* End Values */

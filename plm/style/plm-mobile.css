@@ -1,0 +1,113 @@
+/* Start Hero */
+.hero {
+  background-image: linear-gradient(to top, #ddf0ff, #fff);
+}
+.hero .heading h3 {
+  position: relative;
+  max-width: calc(100% - 25px);
+  background-color: #a9c4d9;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.hero .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero .content-box .content {
+  margin-top: 50px;
+}
+.hero .content-box h5 {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.hero .content-box h5::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 0;
+  width: 10px; height: 10px;
+  background-color: var(--main);
+  transform: translateY(-50%) rotate(45deg);
+}
+.hero .content-box .txt {
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+/* End Hero */
+
+/* Start Product Managements */
+.product-management {
+  background-image: linear-gradient(to top, #b5d3eb, #ddf0ff);
+  overflow-x: hidden;
+}
+.product-management .product {
+  margin-bottom: 75px;
+}
+.product .content-box h3 {
+  position: relative;
+  padding: 5px 25px;
+  margin-bottom: 35px;
+  z-index: 1;
+}
+.product .content-box h3::before {
+  content: '';
+  position: absolute;
+  left: 15px; top: 0;
+  width: calc(100% + 15px);
+  height: 100%;
+  z-index: -1;
+}
+.product:nth-child(1) .content-box h3 {
+  background-image: linear-gradient(to right, #8d8f97 10%, transparent);
+}
+.product:nth-child(2) .content-box h3 {
+  background-image: linear-gradient(to right, #d3bdad 10%, transparent);
+}
+.product:nth-child(3) .content-box h3 {
+  background-image: linear-gradient(to right, #e89c7f 10%, transparent);
+}
+.product:nth-child(4) .content-box h3 {
+  background-image: linear-gradient(to right, #7da2c0 10%, transparent);
+}
+.product:nth-child(5) .content-box h3 {
+  background-image: linear-gradient(to right, #80c4cc 10%, transparent);
+}
+.product .content-box ul > li {
+  position: relative;
+  list-style: none;
+  line-height: 25px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+.product .content-box ul > li::before {
+  content: '';
+  position: absolute;
+  top: 8px; left: 0;
+  width: 10px; height: 10px;
+  background-color: #4d9cac;
+  transform: rotate(45deg);
+}
+.product .container .img-box {
+  margin-bottom: 35px;
+  border-radius: 15px;
+}
+.product .container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.project .container .img-box {
+  max-width: 300px;
+  margin: 0 auto 35px;
+}
+.project .content-box ol li {
+  list-style: none;
+  margin-left: 35px;
+  margin-top: 8px;
+}
+/* End Product Managements */

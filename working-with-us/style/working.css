@@ -1,0 +1,124 @@
+/* Start Hero */
+.hero {
+  background: #fff !important;
+}
+.hero .heading {
+  width: 55%;
+  text-align: right;
+  margin-bottom: 35px;
+}
+.hero .heading::before {
+  right: -58px;
+  border-color: transparent  transparent #a9c4d9 #a9c4d9;
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+}
+.hero .container .left-side,
+.hero .container .right-side {
+  width: 45%;
+}
+.hero .right-side .img-box {
+  position: relative;
+  margin-left: 25px;
+}
+.hero .right-side img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.hero .left-side .txt:first-child {
+  text-align: right;
+  margin-bottom: 25px;
+}
+.hero .left-side .txt {
+  text-indent: 20px;
+}
+.hero .btn-box {
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+@media screen and (max-width: 991px) {
+  .hero .container {
+    flex-direction: column-reverse;
+  }
+  .hero .intro-txt {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .intro-txt p {
+    max-width: 70%;
+  }
+  .hero .container .left-side,
+  .hero .container .right-side {
+    width: 100%;
+  }
+  .hero .right-side .img-box {
+  margin-top: 35px;
+  }
+  .hero .left-side .txt {
+    margin: 35px 0;
+  }
+  .hero .btn-box {
+    margin-right: 0;
+  }
+}
+/* End Hero */
+
+/* Start Life */
+.life {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), #e0f2ff 10%, transparent);
+  overflow-x: hidden;
+}
+.life .heading {
+  width: calc(100% + 500px);
+  max-width: 85%;
+  background-image: linear-gradient(to right, #7da2c0 10%, transparent);
+  padding: 5px 15px;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+.life .container {
+  display: flex;
+  justify-content: space-between;
+}
+.life .lower-content {
+  margin: 35px 0 25px;
+}
+.life .container .left-side,
+.life .container .right-side {
+  width: 47%;
+}
+.life .left-side .txt {
+  text-align: right;
+}
+.lower-content .right-side .txt {
+  text-indent: 20px;
+}
+.life .left-side img,
+.life .right-side img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+}
+@media screen and (max-width: 991px) {
+  .life .upper-content .container {
+    flex-direction: column-reverse;
+  }
+  .life .lower-content .container {
+    flex-direction: column;
+  }
+  .life .container .left-side,
+  .life .container .right-side {
+    width: 100%;
+  }
+  .life .left-side .img-box,
+  .life .right-side .img-box {
+    margin-bottom: 25px;
+  }
+}
+/* End Life */

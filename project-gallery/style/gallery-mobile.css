@@ -1,0 +1,114 @@
+/* Start Hero */
+.hero {
+  background-image: linear-gradient(to top, #dae5ef, #fff);
+  padding-bottom: 0;
+}
+.hero .heading h3 {
+  position: relative;
+  max-width: calc(100% - 25px);
+  background-color: #a9c4d9;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+.hero .intro-txt .txt {
+  font-size: 20px;
+  max-width: 75%;
+  text-indent: 0;
+}
+.hero .img-box {
+  max-height: 280px;
+  margin: 10px 0 25px;
+}
+.hero .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero .container .txt:first-of-type {
+  margin-bottom: 35px;
+}
+/* End Hero */
+
+/* Start Gallery */
+.gallery {
+  background-image: linear-gradient(to top, #b9d4eb, #dae5ef);
+}
+.gallery h3 {
+  position: relative;
+  max-width: calc(100% - 25px);
+  background-color: #a9c4d9;
+  text-align: right;
+  padding: 5px 10px;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+/* Slider */
+.slider-container {
+  position: relative;
+  width: 270px;
+  min-height: 350px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider .controls {
+  width: 250px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 10px;
+  bottom: 35px;
+}
+.slider-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+
+/* In Progress */
+.in-progress {
+  margin-bottom: 25px;
+}
+.slider .title {
+  margin-left: 25px;
+  margin-bottom: 15px;
+  text-transform: none;
+}
+.slider-container .image-box {
+  width: 100%;
+  height: 250px;
+}
+.slider-container .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  user-select: none;
+}
+.slide .project-content {
+  height: 100px;
+  background-color: #bce0fd;
+  text-align: center;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.slide .project-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+}
+.slide .project-content .txt {
+  font-size: 14px;
+  line-height: 1.5;
+  text-indent: 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+/* End Gallery */

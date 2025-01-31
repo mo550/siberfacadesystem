@@ -1,0 +1,147 @@
+/* Start Hero */
+.hero {
+  padding-bottom: 25px;
+}
+.hero .heading {
+  width: 37%;
+  text-align: right;
+  margin-bottom: 25px;
+}
+.hero .heading::before {
+  right: -58px;
+  border-color: transparent  transparent #a9c4d9 #a9c4d9;
+}
+.hero .container .intro-txt {
+  max-width: 50%;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+.hero .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .container .left-side,
+.hero .container .right-side {
+  width: 40%;
+}
+.hero .container .content .txt {
+  text-indent: 20px;
+}
+.hero .logos {
+  max-width: 70%;
+  text-align: center;
+  margin: 75px auto 0;
+}
+.hero .logos img {
+  max-width: 80px;
+  margin: 10px 25px;
+}
+@media screen and (max-width: 991px) {
+  .hero .container .content {
+    flex-direction: column;
+  }
+  .hero .container .left-side,
+  .hero .container .right-side {
+    width: 100%;
+  }
+  .hero .right-side .txt {
+    margin-top: 25px;
+  }
+}
+/* End Hero */
+
+/* Start Info */
+.info {
+  background-color: #ebf7ff;
+  text-align: center;
+  padding: 15px 0;
+}
+/* End Info */
+
+/* Start Testimonials */
+.testimonials {
+  background-image: linear-gradient(to top, #cce1f3 5%, #ebf7ff);
+  overflow-x: hidden;
+}
+.testimonials .slider-box {
+  max-width: 92.5%;
+  margin-left: auto;
+}
+.testimonials .slider-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  z-index: 1;
+}
+.testimonials .slider-heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  width: calc(100% + 300px);
+  height: 40px;
+  background-image: linear-gradient(to right, #7da2c0 10%, transparent);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.slider-heading h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+.slider-heading .controls {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.controls #next,
+.controls #prev {
+  cursor: pointer;
+}
+.slider-heading .controls .slideNo {
+  margin: 0 30px;
+}
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.slider-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+.slider .person-details .txt:first-child {
+  margin-bottom: 25px;
+}
+.person-details h4 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+.person-details .txt:last-child {
+  font-size: 12px;
+  line-height: 1.5;
+}
+/* End Testimonials */
+
+/* Start Partner */
+.partner {
+  background-color: #8da3b5;
+  padding-bottom: 50px;
+}
+.partner .content {
+  background-color: #fafcff;
+  text-align: center;
+  padding: 15px 0 35px;
+}
+.partner .txt {
+  margin: 15px 0;
+}
+.partner .main-btn {
+  cursor: pointer;
+}
+/* End Partner */

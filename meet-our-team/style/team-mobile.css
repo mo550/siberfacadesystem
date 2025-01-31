@@ -1,0 +1,74 @@
+/* Start Team */
+.team {
+  background-image: linear-gradient(to bottom, #fbfdff, #f1f9ff, #ebf7ff);
+}
+.team .logo-img {
+  margin-bottom: 50px;
+}
+.team-box .team-content {
+  max-width: 75%;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+.team-box .team-content h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-transform: none;
+}
+.team-box .team-content p {
+  font-size: 14px;
+}
+.team-box .team-img {
+  max-width: 75%;
+  height: 300px;
+  margin: 0 auto 25px;
+  overflow: hidden;
+}
+.team-box .team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.team-box .member-details .txt:first-child {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 400px) {
+  .team-box .team-img {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .team-box .member-details .txt {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+/* Slider */
+.slider .controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto -22px;
+  z-index: 100;
+}
+.controls #next,
+.controls #prev {
+  font-size: 18px;
+  cursor: pointer;
+}
+.slider-container {
+  position: relative;
+  width: 100%;
+  min-height: 825px;
+  overflow: hidden;
+}
+.slider-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+/* End Team */

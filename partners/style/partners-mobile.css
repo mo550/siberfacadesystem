@@ -1,0 +1,133 @@
+/* Start Hero */
+.hero {
+  background-image: linear-gradient(to top, #ddf0ff, #fff);
+}
+.hero .logo-img {
+  margin-bottom: 35px;
+}
+.hero .intro-txt {
+  background-color: #dee9f1;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.hero .intro-txt .txt {
+  font-size: 18px;
+  text-align: right;
+}
+.hero .container .txt {
+  margin-bottom: 10px;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.logos img {
+  max-width: 90px;
+  margin: 0 5px 15px;
+}
+/* End Hero */
+
+/* Start Info */
+.info {
+  background-color: #759ebe;
+  padding: 10px 0;
+}
+.info .txt {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 80%;
+  margin: 0 auto;
+  text-indent: 0;
+  text-align: center;
+}
+/* End Info */
+
+/* Start Slider */
+.testimonials {
+  position: relative;
+  background-color: #dbefff;
+  padding-bottom: 0;
+}
+.testimonials h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.slider .controls {
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  padding: 0 15px;
+}
+.controls #next,
+.controls #prev {
+  cursor: pointer;
+}
+.slider-container {
+  position: relative;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+.slider .person-details .txt:first-child {
+  font-size: 15px;
+  text-indent: 0;
+  margin-bottom: 15px;
+}
+.person-details h4 {
+  max-width: 25%;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 10px;
+}
+.person-details .txt:last-child {
+  font-size: 12px;
+  line-height: 1.5;
+  text-indent: 0;
+}
+@media screen and (max-width: 375px) {
+  .slider-container {
+    width: 100%;
+  }
+  .slider .controls {
+    padding: 0 5px;
+  }
+  .slider .person-details .txt:first-child {
+    font-size: 14px;
+  }
+}
+/* End Slider */
+
+/* Start Partner */
+.partner {
+  background-image: linear-gradient(to top, #b8d4eb, #dbefff);
+  padding: 25px 0 65px;
+}
+.partner h3 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.partner .btn-box {
+  text-align: center;
+  margin-top: 25px;
+}
+.partner .main-btn {
+  font-size: 12px;
+  cursor: pointer;
+}
+/* End Partner */
